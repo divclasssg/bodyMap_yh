@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ko" data-dark-mode="false">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROTOTYPE v.0.1</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="globalheader">
+    <div class="globalheader-wrapper">
+      <h1 class="logo">High E Pharmas 3D Anatomy Map</h1>
+      <nav class="globalnav">
+        <ul class="globalnav-list">
+          <li class="globalnav-item">
+            <a href="#" class="globalnav-link">파일</a>
+          </li>
+          <li class="globalnav-item">
+            <a href="#" class="globalnav-link">에디트</a>
+          </li>
+          <li class="globalnav-item">
+            <a href="#" class="globalnav-link">셀렉션</a>
+          </li>
+          <li class="globalnav-item">
+            <a href="#" class="globalnav-link">뷰</a>
+          </li>
+          <li class="globalnav-item">
+            <a href="#" class="globalnav-link">고</a>
+          </li>
+          <li class="globalnav-item">
+            <a href="#" class="globalnav-link">런</a>
+          </li>
+          <li class="globalnav-item">
+            <a href="#" class="globalnav-link">터미널</a>
+          </li>
+          <li class="globalnav-item">
+            <a href="#" class="globalnav-link">윈도우</a>
+          </li>
+          <li class="globalnav-item">
+            <a href="#" class="globalnav-link">헬프</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="globalheader-fn-wrapper">
+        <div class="toggle-switch-wrapper">
+          <p class="toggle-switch-text">Dark Mode</p>
+          <label for="toggle-dark-mode" class="toggle-switch">
+            <input type="checkbox" id="toggle-dark-mode" class="button-toggle">
+            <span class="toggle-icon"></span>
+          </label>
+        </div>
+        <button type="button" class="button-logout">로그아웃</button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section section-visual">
+      <div class="section-wrapper">
+        <header class="section-header">
+          <h1 class="section-title">Visual Data Section</h1>
+          <div class="tab">
+            <button type="button" class="button-tab active" data-tab-button="visual_phy">Physiology</button>
+            <button type="button" class="button-tab" data-tab-button="visual_mec">Mechanisms</button>
+          </div>
+        </header>
+        <section class="section-content">
+          <div class="tab-content" data-tab-content="visual_phy">
+            <div>Visual Data Section Physiology</div>
+          </div>
+          <div class="tab-content" data-tab-content="visual_mec" hidden>
+            <div>Visual Data Section Mechanisms</div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <div class="data-section-wrapper">
+      <section class="section section-data section-data-foreset-view">
+        <div class="section-wrapper">
+          <header class="section-header">
+            <h1 class="section-title">Data Section 1 : Forest View</h1>
+            <div class="tab">
+              <button type="button" class="button-tab active" data-tab-button="forest_phy">Physiology</button>
+              <button type="button" class="button-tab" data-tab-button="forest_mec">Mechanisms</button>
+            </div>
+          </header>
+          <section class="section-content tab-content" data-tab-content="forest_phy">
+            <div class="table-wrapper">
+              <table class="table-row">
+                <thead>
+                  <tr>
+                    <th colspan="14">생리</th>
+                    <th>병리</th>
+                  </tr>
+                  <tr>
+                    <th rowspan="2">기관계</th>
+                    <th rowspan="2">기관</th>
+                    <th rowspan="2">조직</th>
+                    <th rowspan="2" colspan="2">세포</th>
+                    <th colspan="6">분자</th>
+                    <th rowspan="2">원자/유전자</th>
+                    <th rowspan="2" colspan="2">생화학/생리학</th>
+                    <th rowspan="2">임상병리학</th>
+                  </tr>
+                  <tr>
+                    <th colspan="2">호르몬/신경전달물질</th>
+                    <th>효소</th>
+                    <th>수용체</th>
+                    <th>병리물질</th>
+                    <th>기타물질</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="19">내분비계</td>
+                    <td rowspan="9">췌장</td>
+                    <td rowspan="7">내분비부<br>(랑게르한스섬) </td>
+                    <td rowspan="7">췌장 내분비 세포</td>
+                    <td>α 세포 (-글루카곤)</th>
+                    <td>글루카곤</th>
+                    <td></th>
+                    <td>DPP4</th>
+                    <td>글루카곤 수용체</th>
+                    <td>AGEs</th>
+                    <td>EC</th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                  </tr>
+                  <tr>
+                    <td rowspan="3">β 세포 (-인슐린)</td>
+                    <td>인슐린</th>
+                    <td></th>
+                    <td></th>
+                    <td>인슐린 수용체</th>
+                    <td>NF-kB</th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                  </tr>
+                  <tr>
+                    <td>C-peptide</th>
+                    <td></th>
+                    <td></th>
+                    <td>GLUT</th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                  </tr>
+                  <tr>
+                    <td>아밀린</th>
+                    <td></th>
+                    <td></th>
+                    <td>SGLT2</th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                  </tr>
+                  <tr>
+                    <td>δ 세포 (-소마토스타틴)</th>
+                    <td>소마토스타틴</th>
+                    <td></th>
+                    <td></th>
+                    <td>EC 수용체</th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                  </tr>
+                  <tr>
+                    <td>PP 세포(F 세포)</th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                  </tr>
+                  <tr>
+                    <td>D1 세포</th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">외분비부</td>
+                    <td rowspan="2">췌장 외분비 세포</td>
+                    <td>Acinar Cells</th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                  </tr>
+                  <tr>
+                    <td>Duct Cells</th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                  </tr>
+                  <tr>
+                    <td rowspan="3">위/소장/대장</td>
+                    <td rowspan="7">지방조직</td>
+                    <td rowspan="3">장 내분비 세포</td>
+                    <td>L 세포 (- GLP-1)</th>
+                    <td>GLP-1</th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                    <td></th>
+                  </tr>
+                  <tr>
+                    <td>K 세포 (- GIP)</td>
+                    <td>GIP</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>장 크롬친화 세포</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="4">지방</td>
+                    <td rowspan="4">지방 세포</td>
+                    <td>갈색 지방세포</td>
+                    <td rowspan="4">아디포카인</td>
+                    <td>Leptin</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>백색 지방세포(-아디포카인)</td>
+                    <td>Adiponectin</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>베이지색 지방세포</td>
+                    <td>IL-6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>MCP-1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">부신</td>
+                    <td>수질</td>
+                    <td></td>
+                    <td></td>
+                    <td>카테콜아민</td>
+                    <td>E, NE</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>피질</td>
+                    <td></td>
+                    <td></td>
+                    <td>코르티솔</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>뇌하수체</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>성장 호르몬</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="section-content tab-content" data-tab-content="forest_mec" hidden>
+            <div class="table-wrapper">
+              forest mec
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="section section-data section-data-tree-view">
+        <div class="section-wrapper">
+          <header class="section-header">
+            <h1 class="section-title">Data Section 2 : Tree View</h1>
+            <div class="tab">
+              <button type="button" class="button-tab active" data-tab-button="tree_phy">Physiology</button>
+              <button type="button" class="button-tab" data-tab-button="tree_mec">Mechanisms</button>
+            </div>
+          </header>
+          <section class="section-content tab-content" data-tab-content="tree_phy">
+            <div class="table-wrapper">
+              <table class="table-col">
+                <colgroup>
+                  <col width="30">
+                  <col width="50">
+                  <col width="50">
+                  <col width="500">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th rowspan="14">
+                      <p>세포</p>
+                    </th>
+                    <th colspan="2">
+                      <p>명칭</p>
+                    </th>
+                    <td>
+                      <p>β 세포(40%)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colspan="2">
+                      <p>개념</p>
+                    </th>
+                    <td>
+                      <p>β 세포 : 인슐린과 아밀린을 합성해 분비하는 췌장섬에 존재하는 내분비 세포의 일종</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colspan="2">
+                      <p>구조</p>
+                    </th>
+                    <td>
+                      <p> </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colspan="2">
+                      <p>분포</p>
+                    </th>
+                    <td>
+                      <p> </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colspan="2">
+                      <p>기능</p>
+                    </th>
+                    <td>
+                      <p>인슐린, 아밀린 합성 및 분비 =&gt; 혈당 저하</p>
+                      <p> - 인슐린 생산 &amp; 분비 =&gt; 조직내 포도당의 이용 조절 : 혈당치 감소</p>
+                      <p> - 아밀린 생산 &amp; 분비</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colspan="2">
+                      <p>특징</p>
+                    </th>
+                    <td>
+                      <p>랑게르한스섬의 40%를 차지</p>
+                      <p>인슐린 β 세포 막에 존재하는 GLUT2는 인슐린 친화력이 상대적으로 낮음 =&gt; b세포내로의 포도당 유입이 혈당에 비례함</p>
+                      <p>- (+) 아밀린 : 단기간의 음식 섭취 조절 / 혈류로 들어가는 포도당의 속도를 낮춤</p>
+                      <p> 인슐린 : 장기간의 음식 섭취 조절</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colspan="2">
+                      <p>계열/원료</p>
+                    </th>
+                    <td>
+                      <p> </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colspan="2">
+                      <p>유전자</p>
+                    </th>
+                    <td>
+                      <p> </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2">
+                      <p>분자</p>
+                    </th>
+                    <th>
+                      <p> </p>
+                    </th>
+                    <td>
+                      <p> </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <p>수용체</p>
+                    </th>
+                    <td>
+                      <p> </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colspan="2">
+                      <p>반응</p>
+                    </th>
+                    <td>
+                      <p> </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colspan="2">
+                      <p>생리(관련생리)</p>
+                    </th>
+                    <td>
+                      <p>α 세포</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colspan="2">
+                      <p>병리(관련질환)</p>
+                    </th>
+                    <td>
+                      <p>당뇨병</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colspan="2">
+                      <p>약리(관련약제)</p>
+                    </th>
+                    <td>
+                      <p> </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="section-content tab-content" data-tab-content="tree_mec" hidden>
+            <div class="table-wrapper">
+              tree mec
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="globalfooter">
+    <p class="copyright">copyright&copy;</p>
+  </footer>
+
+  <script src="js/ui.js"></script>
+</body>
+</html>
